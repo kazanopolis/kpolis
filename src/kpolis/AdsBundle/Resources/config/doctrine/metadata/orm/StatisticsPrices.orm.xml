@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="StatisticsPrices" table="statistics_prices">
+    <id name="itemId" type="integer" column="item_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="itemType" type="string" column="item_type" nullable="false"/>
+    <field name="houseFloors" type="boolean" column="house_floors" nullable="false"/>
+    <field name="objectFloor" type="boolean" column="object_floor" nullable="false"/>
+    <field name="objectRooms" type="boolean" column="object_rooms" nullable="false"/>
+    <field name="adType" type="boolean" column="ad_type" nullable="false"/>
+    <field name="houseType" type="boolean" column="house_type" nullable="false"/>
+    <field name="itemsCount" type="integer" column="items_count" nullable="false"/>
+    <field name="itemsAvgPrice" type="integer" column="items_avg_price" nullable="false"/>
+  </entity>
+</doctrine-mapping>

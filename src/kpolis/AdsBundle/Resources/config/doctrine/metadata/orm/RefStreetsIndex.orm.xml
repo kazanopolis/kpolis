@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefStreetsIndex" table="ref_streets_index">
+    <id name="streetId" type="smallint" column="street_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="streetType" type="boolean" column="street_type" nullable="false"/>
+    <field name="streetName" type="string" column="street_name" length="40" nullable="true"/>
+    <field name="streetUrl" type="string" column="street_url" length="100" nullable="true"/>
+    <field name="streetArea" type="boolean" column="street_area" nullable="false"/>
+    <field name="lat" type="string" column="lat" length="30" nullable="true"/>
+    <field name="lng" type="string" column="lng" length="30" nullable="true"/>
+    <field name="flGmapChecked" type="boolean" column="fl_gmap_checked" nullable="false"/>
+    <field name="accuracy" type="boolean" column="accuracy" nullable="false"/>
+  </entity>
+</doctrine-mapping>

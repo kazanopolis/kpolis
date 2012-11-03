@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="ClaimsIndex" table="claims_index">
+    <id name="claimId" type="integer" column="claim_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="createDate" type="integer" column="create_date" nullable="false"/>
+    <field name="lastDate" type="integer" column="last_date" nullable="false"/>
+    <field name="street" type="string" column="street" length="255" nullable="true"/>
+    <field name="housenumber" type="string" column="housenumber" length="10" nullable="true"/>
+    <field name="lat" type="string" column="lat" length="20" nullable="true"/>
+    <field name="lng" type="string" column="lng" length="20" nullable="true"/>
+    <field name="servicename" type="string" column="servicename" length="255" nullable="true"/>
+    <field name="ordertype" type="string" column="ordertype" length="15" nullable="true"/>
+    <field name="hash" type="string" column="hash" length="32" nullable="true"/>
+    <field name="buildingnumber" type="string" column="buildingnumber" length="10" nullable="true"/>
+  </entity>
+</doctrine-mapping>

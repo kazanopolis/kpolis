@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AdsQualityLog" table="ads_quality_log">
+    <id name="itemId" type="integer" column="item_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="adId" type="integer" column="ad_id" nullable="false"/>
+    <field name="problemId" type="boolean" column="problem_id" nullable="false"/>
+    <field name="merchantId" type="integer" column="merchant_id" nullable="false"/>
+    <field name="createDate" type="integer" column="create_date" nullable="false"/>
+    <field name="addText" type="string" column="add_text" length="255" nullable="true"/>
+    <field name="action" type="string" column="action" length="20" nullable="true"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="InfrastructureIndex" table="infrastructure_index">
+    <id name="objectId" type="integer" column="object_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="objectName" type="string" column="object_name" length="200" nullable="true"/>
+    <field name="flStatus" type="boolean" column="fl_status" nullable="false"/>
+    <field name="houseId" type="integer" column="house_id" nullable="false"/>
+    <field name="objectAddress" type="string" column="object_address" length="255" nullable="true"/>
+    <field name="lat" type="string" column="lat" length="30" nullable="true"/>
+    <field name="lng" type="string" column="lng" length="30" nullable="true"/>
+    <field name="2gisId" type="string" column="2gis_id" length="20" nullable="true"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefTagsContent" table="ref_tags_content">
+    <id name="tagId" type="integer" column="tag_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tagType" type="boolean" column="tag_type" nullable="false"/>
+    <field name="tagName" type="string" column="tag_name" length="100" nullable="true"/>
+    <field name="parentId" type="integer" column="parent_id" nullable="false"/>
+    <field name="flStatus" type="boolean" column="fl_status" nullable="false"/>
+    <field name="sectionId" type="boolean" column="section_id" nullable="true"/>
+    <field name="tagUrl" type="string" column="tag_url" length="50" nullable="true"/>
+  </entity>
+</doctrine-mapping>

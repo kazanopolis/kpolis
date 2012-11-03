@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="LaunchIndex" table="launch_index">
+    <id name="launchId" type="integer" column="launch_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="launchName" type="string" column="launch_name" length="255" nullable="false"/>
+    <field name="launchLastTime" type="integer" column="launch_last_time" nullable="false"/>
+    <field name="launchNextTime" type="integer" column="launch_next_time" nullable="false"/>
+    <field name="launchPeriodLarge" type="integer" column="launch_period_large" nullable="false"/>
+    <field name="launchPeriodSmall" type="integer" column="launch_period_small" nullable="false"/>
+    <field name="launchMode" type="boolean" column="launch_mode" nullable="false"/>
+  </entity>
+</doctrine-mapping>

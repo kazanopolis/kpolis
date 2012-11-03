@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefAgenciesIndex" table="ref_agencies_index">
+    <id name="agencyId" type="smallint" column="agency_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="agencyAddress" type="string" column="agency_address" length="100" nullable="true"/>
+    <field name="merchantId" type="smallint" column="merchant_id" nullable="false"/>
+    <field name="agencyName" type="string" column="agency_name" length="100" nullable="true"/>
+  </entity>
+</doctrine-mapping>

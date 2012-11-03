@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefZhksIndex" table="ref_zhks_index">
+    <id name="zhkId" type="boolean" column="zhk_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="zhkName" type="string" column="zhk_name" length="100" nullable="true"/>
+    <field name="zhkUrl" type="string" column="zhk_url" length="50" nullable="true"/>
+    <field name="zhkParent" type="boolean" column="zhk_parent" nullable="false"/>
+    <field name="zhkDistrict" type="boolean" column="zhk_district" nullable="true"/>
+    <field name="zhkHousesCount" type="boolean" column="zhk_houses_count" nullable="false"/>
+    <field name="zhkFloorsFrom" type="boolean" column="zhk_floors_from" nullable="false"/>
+    <field name="zhkFloorsTo" type="boolean" column="zhk_floors_to" nullable="false"/>
+    <field name="lat" type="string" column="lat" length="20" nullable="true"/>
+    <field name="lng" type="string" column="lng" length="20" nullable="true"/>
+    <field name="zhkKeywords" type="string" column="zhk_keywords" length="255" nullable="true"/>
+    <field name="flSearchMode" type="boolean" column="fl_search_mode" nullable="false"/>
+    <field name="excludeWords" type="string" column="exclude_words" length="255" nullable="true"/>
+    <field name="zhkGeometry" type="text" column="zhk_geometry" nullable="true"/>
+    <field name="developerId" type="boolean" column="developer_id" nullable="false"/>
+    <field name="contentTagId" type="smallint" column="content_tag_id" nullable="false"/>
+    <field name="zhkSite" type="string" column="zhk_site" length="100" nullable="true"/>
+    <field name="zhkIndex" type="boolean" column="zhk_index" nullable="false"/>
+  </entity>
+</doctrine-mapping>

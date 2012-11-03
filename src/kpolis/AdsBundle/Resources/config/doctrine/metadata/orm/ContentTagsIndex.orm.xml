@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="ContentTagsIndex" table="content_tags_index">
+    <id name="tagId" type="integer" column="tag_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tagName" type="string" column="tag_name" length="100" nullable="true"/>
+    <field name="tagGroupId" type="smallint" column="tag_group_id" nullable="false"/>
+    <field name="tagUrl" type="string" column="tag_url" length="50" nullable="true"/>
+  </entity>
+</doctrine-mapping>

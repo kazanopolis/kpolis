@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefTagsAdsDublicates" table="ref_tags_ads_dublicates">
+    <id name="wordId" type="integer" column="word_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tagDublName" type="string" column="tag_dubl_name" length="50" nullable="true"/>
+    <field name="wordCount" type="smallint" column="word_count" nullable="false"/>
+    <field name="tagId" type="boolean" column="tag_id" nullable="false"/>
+    <field name="withTagId" type="smallint" column="with_tag_id" nullable="false"/>
+  </entity>
+</doctrine-mapping>

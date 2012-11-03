@@ -1,0 +1,5 @@
+ads_list:
+    pattern:  /list/{page}
+    defaults: { _controller: kpolisAdsBundle:Front:fetch, page: 1 }
+    requirements:
+            page:  \d+

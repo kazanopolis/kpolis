@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="NewsRawSources" table="news_raw_sources">
+    <id name="sourceId" type="integer" column="source_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="sourceUrl" type="text" column="source_url" nullable="true"/>
+    <field name="lastTime" type="integer" column="last_time" nullable="false"/>
+    <field name="nextTime" type="integer" column="next_time" nullable="false"/>
+    <field name="period" type="integer" column="period" nullable="false"/>
+  </entity>
+</doctrine-mapping>

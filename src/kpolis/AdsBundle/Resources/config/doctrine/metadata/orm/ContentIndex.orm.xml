@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="ContentIndex" table="content_index">
+    <id name="itemId" type="integer" column="item_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="itemCaption" type="string" column="item_caption" length="150" nullable="true"/>
+    <field name="sectionId" type="boolean" column="section_id" nullable="true"/>
+    <field name="userId" type="integer" column="user_id" nullable="true"/>
+    <field name="createDate" type="integer" column="create_date" nullable="true"/>
+    <field name="itemContent" type="text" column="item_content" nullable="true"/>
+    <field name="itemPreview" type="text" column="item_preview" nullable="true"/>
+    <field name="flStatus" type="boolean" column="fl_status" nullable="false"/>
+    <field name="itemTitle" type="string" column="item_title" length="100" nullable="true"/>
+    <field name="itemDescription" type="string" column="item_description" length="250" nullable="true"/>
+    <field name="itemSourceUrl" type="string" column="item_source_url" length="255" nullable="true"/>
+    <field name="itemSourceText" type="text" column="item_source_text" nullable="true"/>
+  </entity>
+</doctrine-mapping>

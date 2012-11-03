@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AdsIndexCurrent" table="ads_index_current">
+    <id name="adId" type="integer" column="ad_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="merchantId" type="integer" column="merchant_id" nullable="false"/>
+    <field name="adType" type="boolean" column="ad_type" nullable="true"/>
+    <field name="adPrice" type="integer" column="ad_price" nullable="true"/>
+    <field name="adPhotos" type="boolean" column="ad_photos" nullable="false"/>
+    <field name="districtId" type="boolean" column="district_id" nullable="false"/>
+    <field name="zhkId" type="boolean" column="zhk_id" nullable="false"/>
+    <field name="streetId" type="smallint" column="street_id" nullable="false"/>
+    <field name="houseId" type="integer" column="house_id" nullable="true"/>
+    <field name="adPublishDate" type="integer" column="ad_publish_date" nullable="true"/>
+    <field name="flatRooms" type="boolean" column="flat_rooms" nullable="false"/>
+    <field name="flatFloor" type="boolean" column="flat_floor" nullable="false"/>
+    <field name="flatSquareAll" type="float" column="flat_square_all" nullable="true"/>
+    <field name="flatSquareLive" type="float" column="flat_square_live" nullable="true"/>
+    <field name="flatSquareKitchen" type="float" column="flat_square_kitchen" nullable="true"/>
+    <field name="houseFloors" type="boolean" column="house_floors" nullable="false"/>
+    <field name="parentId" type="integer" column="parent_id" nullable="false"/>
+    <field name="adStatus" type="boolean" column="ad_status" nullable="false"/>
+    <field name="flNew" type="boolean" column="fl_new" nullable="false"/>
+    <field name="flLastFloor" type="boolean" column="fl_last_floor" nullable="false"/>
+    <field name="contactsPhones" type="string" column="contacts_phones" length="50" nullable="true"/>
+    <field name="sourceId" type="boolean" column="source_id" nullable="false"/>
+    <field name="flQualityControl" type="boolean" column="fl_quality_control" nullable="false"/>
+  </entity>
+</doctrine-mapping>

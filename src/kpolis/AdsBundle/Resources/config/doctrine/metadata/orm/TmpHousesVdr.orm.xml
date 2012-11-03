@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="TmpHousesVdr" table="tmp_houses_vdr">
+    <id name="tmpHouseId" type="integer" column="tmp_house_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tmpHouseNumber" type="string" column="tmp_house_number" length="20" nullable="true"/>
+    <field name="tmpSourceId" type="integer" column="tmp_source_id" nullable="false"/>
+    <field name="tmpStreetId" type="integer" column="tmp_street_id" nullable="false"/>
+    <field name="flStatus" type="boolean" column="fl_status" nullable="false"/>
+    <field name="html" type="text" column="html" nullable="true"/>
+  </entity>
+</doctrine-mapping>

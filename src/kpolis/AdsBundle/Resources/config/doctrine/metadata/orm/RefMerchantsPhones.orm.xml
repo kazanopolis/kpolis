@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefMerchantsPhones" table="ref_merchants_phones">
+    <id name="phone" type="string" column="phone">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="merchantId" type="integer" column="merchant_id" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AdsStatistics" table="ads_statistics">
+    <id name="statId" type="integer" column="stat_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="entityType" type="boolean" column="entity_type" nullable="false"/>
+    <field name="entityId" type="integer" column="entity_id" nullable="false"/>
+    <field name="paramType" type="boolean" column="param_type" nullable="false"/>
+    <field name="paramSum" type="bigint" column="param_sum" nullable="false"/>
+    <field name="paramCount" type="smallint" column="param_count" nullable="false"/>
+    <field name="paramAverage" type="float" column="param_average" nullable="false"/>
+    <field name="paramMin" type="float" column="param_min" nullable="true"/>
+    <field name="paramMax" type="float" column="param_max" nullable="true"/>
+  </entity>
+</doctrine-mapping>

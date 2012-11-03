@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefZhksPhotos" table="ref_zhks_photos">
+    <id name="photoId" type="integer" column="photo_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="zhkId" type="integer" column="zhk_id" nullable="false"/>
+    <field name="filePath" type="string" column="file_path" length="255" nullable="true"/>
+    <field name="createDate" type="integer" column="create_date" nullable="false"/>
+    <field name="flStatus" type="boolean" column="fl_status" nullable="false"/>
+    <field name="photoType" type="boolean" column="photo_type" nullable="false"/>
+    <field name="photoDescription" type="string" column="photo_description" length="255" nullable="true"/>
+  </entity>
+</doctrine-mapping>

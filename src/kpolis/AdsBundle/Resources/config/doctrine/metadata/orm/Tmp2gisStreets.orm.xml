@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Tmp2gisStreets" table="tmp_2gis_streets">
+    <id name="tmpId" type="integer" column="tmp_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="streetName" type="string" column="street_name" length="255" nullable="true"/>
+    <field name="streetId" type="integer" column="street_id" nullable="false"/>
+    <field name="flOut" type="string" column="fl_out" length="100" nullable="false"/>
+  </entity>
+</doctrine-mapping>

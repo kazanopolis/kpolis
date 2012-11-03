@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefHousesIndex" table="ref_houses_index">
+    <id name="houseId" type="integer" column="house_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="houseDistrict" type="boolean" column="house_district" nullable="false"/>
+    <field name="houseStreetId" type="smallint" column="house_street_id" nullable="false"/>
+    <field name="houseNumber" type="smallint" column="house_number" nullable="false"/>
+    <field name="houseDrob" type="smallint" column="house_drob" nullable="false"/>
+    <field name="houseBlock" type="string" column="house_block" length="4" nullable="true"/>
+    <field name="houseKorpus" type="string" column="house_korpus" length="6" nullable="true"/>
+    <field name="houseFloors" type="boolean" column="house_floors" nullable="false"/>
+    <field name="houseStatus" type="boolean" column="house_status" nullable="false"/>
+    <field name="lng" type="string" column="lng" length="20" nullable="true"/>
+    <field name="lat" type="string" column="lat" length="20" nullable="true"/>
+    <field name="houseCrossId" type="string" column="house_cross_id" length="100" nullable="false"/>
+    <field name="flBuild" type="boolean" column="fl_build" nullable="false"/>
+    <field name="fl2gisChecked" type="boolean" column="fl_2gis_checked" nullable="true"/>
+    <field name="houseZhkId" type="boolean" column="house_zhk_id" nullable="false"/>
+    <field name="houseParentId" type="integer" column="house_parent_id" nullable="false"/>
+    <field name="tmpCorrectFlag" type="boolean" column="tmp_correct_flag" nullable="false"/>
+    <field name="houseBuildNumber" type="string" column="house_build_number" length="10" nullable="false"/>
+  </entity>
+</doctrine-mapping>

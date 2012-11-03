@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefSourcesIndex" table="ref_sources_index">
+    <id name="sourceId" type="boolean" column="source_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="sourceName" type="string" column="source_name" length="255" nullable="true"/>
+    <field name="sourceUrl" type="string" column="source_url" length="255" nullable="true"/>
+    <field name="sourceMode" type="boolean" column="source_mode" nullable="false"/>
+  </entity>
+</doctrine-mapping>

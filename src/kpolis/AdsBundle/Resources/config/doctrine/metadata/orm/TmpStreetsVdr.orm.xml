@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="TmpStreetsVdr" table="tmp_streets_vdr">
+    <id name="tmpStreetId" type="integer" column="tmp_street_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tmpStreetName" type="string" column="tmp_street_name" length="255" nullable="true"/>
+    <field name="tmpSourceId" type="integer" column="tmp_source_id" nullable="false"/>
+    <field name="flStatus" type="boolean" column="fl_status" nullable="false"/>
+  </entity>
+</doctrine-mapping>

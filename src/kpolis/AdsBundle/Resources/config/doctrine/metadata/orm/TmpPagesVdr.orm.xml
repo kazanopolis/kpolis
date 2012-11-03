@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="TmpPagesVdr" table="tmp_pages_vdr">
+    <id name="itemId" type="integer" column="item_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="houseId" type="integer" column="house_id" nullable="false"/>
+    <field name="html" type="text" column="html" nullable="true"/>
+    <field name="flStatus" type="boolean" column="fl_status" nullable="false"/>
+  </entity>
+</doctrine-mapping>

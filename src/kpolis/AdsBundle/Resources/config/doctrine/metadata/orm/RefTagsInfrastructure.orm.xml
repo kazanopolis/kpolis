@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RefTagsInfrastructure" table="ref_tags_infrastructure">
+    <id name="tagId" type="boolean" column="tag_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tagName" type="string" column="tag_name" length="40" nullable="true"/>
+    <field name="flOrder" type="boolean" column="fl_order" nullable="false"/>
+    <field name="2gisRubrics" type="string" column="2gis_rubrics" length="255" nullable="true"/>
+    <field name="2gisPages" type="string" column="2gis_pages" length="255" nullable="true"/>
+  </entity>
+</doctrine-mapping>

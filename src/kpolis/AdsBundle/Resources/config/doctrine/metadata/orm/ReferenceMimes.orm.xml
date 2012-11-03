@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="ReferenceMimes" table="reference_mimes">
+    <id name="mimeId" type="boolean" column="mime_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="mimeType" type="string" column="mime_type" length="70" nullable="true"/>
+    <field name="mimeGroup" type="boolean" column="mime_group" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="NewsRawData" table="news_raw_data">
+    <id name="documentId" type="integer" column="document_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="name" length="255" nullable="true"/>
+    <field name="sourceId" type="boolean" column="source_id" nullable="false"/>
+    <field name="documentDate" type="integer" column="document_date" nullable="true"/>
+    <field name="parseDate" type="integer" column="parse_date" nullable="false"/>
+    <field name="flStatus" type="boolean" column="fl_status" nullable="false"/>
+    <field name="sourceUrl" type="text" column="source_url" nullable="true"/>
+    <field name="rawHtml" type="text" column="raw_html" nullable="true"/>
+    <field name="documentText" type="text" column="document_text" nullable="true"/>
+  </entity>
+</doctrine-mapping>
